@@ -1193,48 +1193,60 @@ function fileToBase64(file) {
   });
 }
 
+async function postJSON(payload) {
+  await fetch(CONFIG.scriptUrl, {
+    method: 'POST',
+    mode: 'no-cors',
+    headers: { 'Content-Type': 'text/plain' },
+    body: JSON.stringify(payload),
+  });
+}
+
 async function sendToSheets() {
   const url = CONFIG.scriptUrl;
   if (!url) { toast('❌ 尚未設定 Script URL，請聯絡管理員'); return; }
 
+  // ── 第一步：先送表單資料（不含附件），確保試算表一定寫入 ──
+  toast('⏳ 步驟 1/2：寫入試算表…');
   const d = collectFormData();
   d.driveFolderId = CONFIG.driveFolderId;
-
-  // 附件：先壓縮圖片再轉 base64，並分批送出（每批最多 3 個檔案）
-  if (uploadedFiles.length > 0) {
-    toast('⏳ 正在壓縮並上傳附件，請稍候…');
-    const fileData = [];
-    for (const file of uploadedFiles) {
-      try {
-        const compressed = await compressImage(file);
-        const b64 = await fileToBase64(compressed);
-        // 單檔超過 4MB base64 就跳過並提示
-        if (b64.length > 4 * 1024 * 1024) {
-          toast(`⚠ ${file.name} 太大已略過（請壓縮後再上傳）`);
-          continue;
-        }
-        fileData.push({ name: file.name, type: compressed.type, data: b64 });
-      } catch(err) {
-        console.warn('附件轉換失敗：', file.name, err);
-      }
-    }
-    d.files = fileData;
-  } else {
-    d.files = [];
-  }
-
+  d.files = [];
+  d.附件數量 = uploadedFiles.length;
   try {
-    toast('⏳ 正在送出，請勿關閉視窗…');
-    await fetch(url, {
-      method: 'POST',
-      mode: 'no-cors',
-      headers: { 'Content-Type': 'text/plain' },
-      body: JSON.stringify(d),
-    });
-    toast('✅ 資料已成功送出！請確認試算表與 Drive 資料夾。');
+    await postJSON(d);
   } catch(e) {
-    toast('❌ 送出失敗：' + e.message);
+    toast('❌ 寫入試算表失敗：' + e.message);
+    return;
   }
+  toast('✅ 步驟 1/2 完成！試算表已寫入。');
+
+  // ── 第二步：逐一上傳附件（每個檔案獨立一次請求）──
+  if (uploadedFiles.length === 0) {
+    toast('✅ 資料已成功送出！');
+    return;
+  }
+
+  toast(`⏳ 步驟 2/2：上傳 ${uploadedFiles.length} 個附件到 Drive…`);
+  let ok = 0;
+  for (let i = 0; i < uploadedFiles.length; i++) {
+    const file = uploadedFiles[i];
+    toast(`⏳ 上傳附件 ${i+1}/${uploadedFiles.length}：${file.name}`);
+    try {
+      const compressed = await compressImage(file);
+      const b64 = await fileToBase64(compressed);
+      await postJSON({
+        _filesOnly: true,
+        appNo: d.appNo,
+        applicantName: d.applicantName,
+        driveFolderId: CONFIG.driveFolderId,
+        files: [{ name: file.name, type: compressed.type, data: b64 }],
+      });
+      ok++;
+    } catch(err) {
+      console.warn('附件上傳失敗：', file.name, err);
+    }
+  }
+  toast(`✅ 完成！試算表已儲存，${ok}/${uploadedFiles.length} 個附件上傳至 Drive。`);
 }
 
 
