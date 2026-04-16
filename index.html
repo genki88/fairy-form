@@ -705,7 +705,7 @@
 //  ★ 管理員設定區 — 只需設定這裡，使用者不需要做任何設定
 // ════════════════════════════════════════════
 const CONFIG = {
-  scriptUrl:     'https://script.google.com/macros/s/AKfycbxgUi3qR6etAJ6WqXIlRZxd6bDaQl1k3f08uHdpQfoipoA-G2pRwk7EurgdF9aQhAeDhQ/exec',
+  scriptUrl:     'https://script.google.com/macros/s/AKfycbyy_XtzVl8hxf-IH2aznbGjbxVfCzBlc0hxtDPUSFANkSXFAu_ZEXYU5WbTKeI31zKr6A/exec',
   driveFolderId: '1hS_srjNQvPOMgw0J9EAMTNulYGYZHJtd',
   defaultMgrEmail: '',   // 預設主管 email（選填）
 };
@@ -1030,16 +1030,29 @@ function getWordBase64(d) {
 // PDF → base64（html2canvas + jsPDF 截圖方式，支援中文）
 async function getPDFBase64() {
   const { jsPDF } = window.jspdf;
-  const mainEl = document.querySelector('main');
-  const canvas = await html2canvas(mainEl, {
-    scale: 1.5,
-    useCORS: true,
-    logging: false,
-    backgroundColor: '#FAF3EC',
-    scrollY: -window.scrollY,
-    windowWidth:  document.documentElement.scrollWidth,
-    windowHeight: document.documentElement.scrollHeight,
-  });
+  const mainEl   = document.querySelector('main');
+
+  // 截圖前隱藏固定定位元素（action bar 等）
+  const hiddenEls = [...document.querySelectorAll('.action-bar, .modal-overlay')];
+  hiddenEls.forEach(el => { el._prevDisplay = el.style.display; el.style.display = 'none'; });
+
+  let canvas;
+  try {
+    canvas = await html2canvas(mainEl, {
+      scale: 1.5,
+      useCORS: true,
+      logging: false,
+      backgroundColor: '#FAF3EC',
+      scrollY: 0,
+      y: 0,
+      windowWidth:  mainEl.scrollWidth,
+      windowHeight: mainEl.scrollHeight,
+    });
+  } finally {
+    // 還原隱藏元素
+    hiddenEls.forEach(el => { el.style.display = el._prevDisplay; });
+  }
+
   const pdf   = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' });
   const pageW = pdf.internal.pageSize.getWidth();
   const pageH = pdf.internal.pageSize.getHeight();
