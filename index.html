@@ -1150,45 +1150,58 @@ async function handleSendEmail() {
   if (!to) { alert('請輸入主管 Email'); return; }
 
   setSubmitBtnsLoading(true);
+  const d        = collectFormData();
+  const fileName = docFileName(d);
 
-  // ① 寫入試算表 + 上傳附件
-  toast('⏳ 步驟 1/3：寫入試算表與附件…');
+  // ① 寫入試算表 + 上傳用戶附件
+  toast('⏳ 步驟 1/4：寫入試算表與附件…');
   await sendToSheets();
 
-  // ② 產生 PDF & Word，上傳到 Drive，並透過 Apps Script 寄信（含 PDF 附件）
+  // ② 產生 PDF 並單獨上傳 Drive（小請求，不混入 Word）
   try {
-    toast('⏳ 步驟 2/3：產生 PDF（可能需要數秒）…');
-    const d        = collectFormData();
-    const fileName = docFileName(d);
-    const [pdfB64, wordB64] = await Promise.all([
-      getPDFBase64(),
-      getWordBase64(d),
-    ]);
+    toast('⏳ 步驟 2/4：產生 PDF 並上傳（需要數秒）…');
+    const pdfB64 = await getPDFBase64();
+    await postJSON({
+      _filesOnly:    true,
+      appNo:         d.appNo,
+      applicantName: d.applicantName,
+      driveFolderId: CONFIG.driveFolderId,
+      files: [{ name: fileName + '.pdf', type: 'application/pdf', data: pdfB64 }],
+    });
+  } catch(e) { console.warn('PDF 上傳失敗', e); }
 
-    toast('⏳ 步驟 3/3：上傳文件並發送郵件…');
+  // ③ 產生 Word 並單獨上傳 Drive
+  try {
+    toast('⏳ 步驟 3/4：上傳 Word 文件…');
+    const wordB64 = await getWordBase64(d);
+    await postJSON({
+      _filesOnly:    true,
+      appNo:         d.appNo,
+      applicantName: d.applicantName,
+      driveFolderId: CONFIG.driveFolderId,
+      files: [{ name: fileName + '.doc', type: 'application/msword', data: wordB64 }],
+    });
+  } catch(e) { console.warn('Word 上傳失敗', e); }
+
+  // ④ 發送郵件（只傳文字 + Drive 資料夾連結，完全不帶 binary）
+  try {
+    toast('⏳ 步驟 4/4：發送郵件…');
     const cc      = document.getElementById('ccEmail').value.trim();
     const subject = document.getElementById('mailSubject').value;
     const body    = document.getElementById('mailBody').value;
-
     await postJSON({
-      _sendDocs:    true,
-      appNo:        d.appNo,
-      applicantName: d.applicantName,
-      storeName:    d.storeName,
+      _sendEmail:    true,
+      emailTo:       to,
+      emailCc:       cc,
+      emailSubject:  subject,
+      emailBody:     body,
       driveFolderId: CONFIG.driveFolderId,
-      fileName:     fileName,
-      pdfData:      pdfB64,
-      wordData:     wordB64,
-      emailTo:      to,
-      emailCc:      cc,
-      emailSubject: subject,
-      emailBody:    body,
+      subFolderName: `${d.appNo}_${d.applicantName || '申請人'}`,
     });
-
-    toast('✅ 完成！PDF + Word 已上傳 Drive，郵件（含 PDF 附件）已發送至 ' + to);
-  } catch(err) {
-    console.error(err);
-    toast('⚠️ 文件上傳或郵件發送時發生錯誤，請確認網路與 Apps Script 設定。');
+    toast('✅ 完成！PDF + Word 已上傳 Drive，郵件已發送至 ' + to);
+  } catch(e) {
+    console.error(e);
+    toast('⚠️ 郵件發送失敗，請確認 Apps Script 設定');
   }
 
   setSubmitBtnsLoading(false);
