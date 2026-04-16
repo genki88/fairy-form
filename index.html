@@ -150,10 +150,16 @@
 
 <!-- ── Brand Header ── -->
 <header class="brand-header px-6 py-5">
-  <div class="max-w-3xl mx-auto">
-    <div class="text-xs text-rose-200 tracking-widest mb-1">FARAY SCALP CARE</div>
-    <h1 class="text-2xl font-bold tracking-wide">法芮｜加盟申請暨商圈評估表</h1>
-    <p class="text-sm mt-1">Franchise Application & Trade Area Evaluation Form</p>
+  <div class="max-w-3xl mx-auto flex flex-wrap items-start justify-between gap-3">
+    <div>
+      <div class="text-xs text-rose-200 tracking-widest mb-1">FARAY SCALP CARE</div>
+      <h1 class="text-2xl font-bold tracking-wide">法芮｜加盟申請暨商圈評估表</h1>
+      <p class="text-sm mt-1">Franchise Application & Trade Area Evaluation Form</p>
+    </div>
+    <div class="text-right">
+      <div class="text-xs text-rose-300 mb-1">申請編號</div>
+      <div id="appNoBadge" class="font-mono font-bold text-lg text-white tracking-wider bg-white/10 px-3 py-1 rounded-lg border border-white/25">—</div>
+    </div>
   </div>
 </header>
 
@@ -176,6 +182,17 @@
   <section id="secA" class="section-card mb-5">
     <div class="section-title">A．基本資料</div>
     <div class="section-body grid grid-cols-1 gap-4">
+
+      <!-- 申請編號（唯讀，系統自動產生） -->
+      <div class="flex items-center gap-3 bg-amber-50 border border-amber-200 rounded-lg px-4 py-3">
+        <div class="text-2xl">🔖</div>
+        <div class="flex-1">
+          <div class="text-xs font-semibold text-amber-700 mb-0.5">申請編號（系統自動產生，請勿修改）</div>
+          <input type="text" id="appNo" readonly
+            class="font-mono font-bold text-base !bg-transparent !border-none !p-0 !w-auto text-amber-900 cursor-default"
+            style="border:none!important;background:transparent!important;padding:0!important;width:auto;min-width:200px;" />
+        </div>
+      </div>
 
       <div>
         <label class="field-label">申請類型<span class="req">*</span></label>
@@ -877,8 +894,9 @@ function collectFormData() {
     sigMgr2Name:       val('sigMgr2Name'),
     sigMgr2Date:       val('sigMgr2Date'),
     // Meta
+    appNo:       val('appNo'),
     submittedAt: new Date().toLocaleString('zh-TW'),
-    salesName: localStorage.getItem('cfg_salesName') || '',
+    salesName:   localStorage.getItem('cfg_salesName') || '',
   };
 }
 
@@ -901,7 +919,8 @@ function loadDraft() {
     const d = JSON.parse(raw);
     const setVal = (id, v) => { const el = document.getElementById(id); if (el) el.value = v || ''; };
     // simple fields
-    ['storeName','applicantName','idNumber','ownerName','phone','email','lineId',
+    ['appNo',
+     'storeName','applicantName','idNumber','ownerName','phone','email','lineId',
      'contactAddr','storeAddr','storePing','signDate','openDate',
      'currentJob','experienceOther','shareholders','mgr','tech','admin','otherBizDetail','legalIssueDetail',
      'budgetFee','budgetDecor','budgetEquip','budgetCap','fundSourceOther','lossCapacityDetail',
@@ -909,6 +928,7 @@ function loadDraft() {
      'areaTypeOther','competition','hqOpinion','riskNote',
      'docsOther','sigApplicantName','applyDate','mgr1Opinion','sigMgr1Name','sigMgr1Date','sigMgr2Name','sigMgr2Date'
     ].forEach(id => setVal(id, d[id]));
+    if (d.appNo) syncAppNoBadge(d.appNo);
   } catch(e) {}
 }
 
@@ -957,8 +977,10 @@ function exportWord() {
 <body>
 <h1>法芮 加盟申請暨商圈評估表</h1>
 <p style="text-align:center;color:#7D6050;font-size:12px;">FARAY Franchise Application &amp; Trade Area Evaluation Form</p>
+<p style="text-align:center;font-size:13px;color:#4D2126;font-weight:bold;border:2px solid #AA7064;display:inline-block;padding:4px 20px;border-radius:6px;margin:0 auto 10px;">申請編號：${d.appNo}</p>
 
 ${section('A. 基本資料', `
+  ${row('申請編號', d.appNo)}
   ${row('申請類型', d.applyType)}
   ${row('申請門市名稱', d.storeName)}
   ${row('申請人／法人名稱', d.applicantName)}
@@ -1050,7 +1072,9 @@ function openSubmitModal() {
 
 業務人員已提交一份法芮加盟申請，請審閱並完成簽核。
 
-■ 申請人：${d.applicantName || '（未填）'}
+【申請編號】${d.appNo || '（未產生）'}
+
+■ 申請人　：${d.applicantName || '（未填）'}
 ■ 門市名稱：${d.storeName || '（未填）'}
 ■ 擬設店址：${d.storeAddr || '（未填）'}
 ■ 申請類型：${d.applyType || '（未填）'}
@@ -1059,6 +1083,7 @@ function openSubmitModal() {
 ■ 審查結論：${d.reviewResult || '（待審）'}
 
 ■ 附件清單：${d.attachments || '無'}
+■ Drive 附件已上傳至：Google Drive 法芮加盟申請表資料夾
 
 請於收信後盡快完成簽核，感謝您。
 
@@ -1143,49 +1168,65 @@ async function sendToSheets() {
 //  Settings
 // ════════════════════════════════════════════
 const SCRIPT_CODE = `// ── 法芮加盟申請表 Google Apps Script ──
-// 部署為「網頁應用程式」，執行身分=我，存取=所有人
-// 附件會自動上傳至指定的 Google Drive 資料夾
+// 部署為「網頁應用程式」
+//   執行身分 → 我（你的帳號）
+//   誰可以存取 → 所有人
+// ★ 每次修改程式碼後，必須「部署 > 管理部署 > 選新版本 > 部署」才會生效
 
-// ★ 將此 ID 換成你的 Google Drive 資料夾 ID
+// ★ Google Drive 附件資料夾 ID（從資料夾網址複製）
 var DRIVE_FOLDER_ID = '1hS_srjNQvPOMgw0J9EAMTNulYGYZHJtd';
 
-function doPost(e) {
-  var sheet  = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
-  var data   = JSON.parse(e.postData.contents);
-  var files  = data.files || [];
-  delete data.files;          // 不把 base64 寫進試算表
-
-  // ── 上傳附件到 Drive ──
-  var fileLinks = [];
-  if (files.length > 0) {
-    var folder    = DriveApp.getFolderById(DRIVE_FOLDER_ID);
-    var timestamp = Utilities.formatDate(new Date(), 'Asia/Taipei', 'yyyyMMdd_HHmm');
-    var subName   = timestamp + '_' + (data.applicantName || '申請人');
-    var subFolder = folder.createFolder(subName);
-
-    files.forEach(function(f) {
-      try {
-        var decoded = Utilities.base64Decode(f.data);
-        var blob    = Utilities.newBlob(decoded, f.type, f.name);
-        var created = subFolder.createFile(blob);
-        created.setSharing(DriveApp.Access.ANYONE_WITH_LINK, DriveApp.Permission.VIEW);
-        fileLinks.push(f.name + ': ' + created.getUrl());
-      } catch(err) {
-        fileLinks.push(f.name + ': 上傳失敗');
-      }
-    });
-  }
-  data.attachmentLinks = fileLinks.join('\\n');
-
-  // ── 寫入試算表 ──
-  if (sheet.getLastRow() === 0) {
-    sheet.appendRow(Object.keys(data));
-  }
-  sheet.appendRow(Object.values(data));
-
+// 測試用：在瀏覽器直接開啟 Script URL 應回傳 {"status":"ok","msg":"Script is alive"}
+function doGet(e) {
   return ContentService
-    .createTextOutput(JSON.stringify({ status: 'ok' }))
+    .createTextOutput(JSON.stringify({ status: 'ok', msg: 'Script is alive' }))
     .setMimeType(ContentService.MimeType.JSON);
+}
+
+function doPost(e) {
+  try {
+    var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+    var data  = JSON.parse(e.postData.contents);
+    var files = data.files || [];
+    delete data.files;   // base64 不寫入試算表
+
+    // ── 上傳附件到 Drive ──
+    var fileLinks = [];
+    if (files.length > 0) {
+      var folder  = DriveApp.getFolderById(DRIVE_FOLDER_ID);
+      var appNo   = data.appNo || Utilities.formatDate(new Date(),'Asia/Taipei','yyyyMMdd_HHmm');
+      var subName = appNo + '_' + (data.applicantName || '申請人');
+      var subFolder = folder.createFolder(subName);
+
+      files.forEach(function(f) {
+        try {
+          var blob    = Utilities.newBlob(Utilities.base64Decode(f.data), f.type, f.name);
+          var created = subFolder.createFile(blob);
+          created.setSharing(DriveApp.Access.ANYONE_WITH_LINK, DriveApp.Permission.VIEW);
+          fileLinks.push(f.name + ': ' + created.getUrl());
+        } catch(err) {
+          fileLinks.push(f.name + ': 上傳失敗 (' + err.message + ')');
+        }
+      });
+    }
+    data.attachmentLinks = fileLinks.join('\\n');
+
+    // ── 寫入試算表 ──
+    if (sheet.getLastRow() === 0) {
+      sheet.appendRow(Object.keys(data));
+    }
+    sheet.appendRow(Object.values(data));
+
+    return ContentService
+      .createTextOutput(JSON.stringify({ status: 'ok' }))
+      .setMimeType(ContentService.MimeType.JSON);
+
+  } catch(err) {
+    // 將錯誤訊息也回傳，方便除錯
+    return ContentService
+      .createTextOutput(JSON.stringify({ status: 'error', msg: err.message }))
+      .setMimeType(ContentService.MimeType.JSON);
+  }
 }`;
 
 function openSettings() {
@@ -1214,14 +1255,38 @@ function openScriptGuide() {
 
 
 // ════════════════════════════════════════════
+//  申請編號
+// ════════════════════════════════════════════
+function generateAppNo() {
+  const now   = new Date();
+  const ymd   = now.getFullYear().toString() +
+                String(now.getMonth() + 1).padStart(2, '0') +
+                String(now.getDate()).padStart(2, '0');
+  const rnd   = String(Math.floor(Math.random() * 9000) + 1000); // 4位隨機
+  return `FR-${ymd}-${rnd}`;
+}
+
+function syncAppNoBadge(no) {
+  document.getElementById('appNo').value = no;
+  document.getElementById('appNoBadge').textContent = no;
+}
+
+// ════════════════════════════════════════════
 //  Init
 // ════════════════════════════════════════════
 window.addEventListener('DOMContentLoaded', () => {
-  loadDraft();
-  // Set today as default apply date
+  loadDraft();   // 若草稿有舊的申請編號會在 loadDraft 內 syncAppNoBadge
+
+  // 若草稿沒有申請編號（全新表單），產生新的
+  if (!document.getElementById('appNo').value) {
+    syncAppNoBadge(generateAppNo());
+  }
+
+  // 設定今日為預設申請日期
   const td = document.getElementById('applyDate');
   if (td && !td.value) td.value = new Date().toISOString().split('T')[0];
-  // Auto-save every 2 min
+
+  // 每 2 分鐘自動儲存草稿
   setInterval(saveDraft, 120000);
 });
 </script>
