@@ -657,8 +657,8 @@
     </div>
     <div class="modal-footer">
       <button class="btn btn-outline" onclick="closeModal('submitModal')">取消</button>
-      <button class="btn btn-cream" onclick="sendToSheets()">📊 僅存入試算表</button>
-      <button class="btn" style="background:var(--primary);color:#fff" onclick="sendEmail()">✉ 開啟郵件程式</button>
+      <button class="btn btn-cream" id="btnSheetsOnly" onclick="handleSheetsOnly()">📊 僅存入試算表</button>
+      <button class="btn" id="btnSendEmail" style="background:var(--primary);color:#fff" onclick="handleSendEmail()">✉ 開啟郵件程式</button>
     </div>
   </div>
 </div>
@@ -689,7 +689,11 @@
 
       <div>
         <label class="field-label">Google Apps Script Webhook URL</label>
-        <input type="text" id="cfg_sheetUrl" placeholder="https://script.google.com/macros/s/...exec" />
+        <div class="flex gap-2">
+          <input type="text" id="cfg_sheetUrl" placeholder="https://script.google.com/macros/s/...exec" class="flex-1" />
+          <button class="btn btn-outline" style="white-space:nowrap;padding:6px 12px;font-size:12px;" onclick="testConnection()">🔗 測試連線</button>
+        </div>
+        <div id="connStatus" class="text-xs mt-1 hidden"></div>
         <p class="text-xs text-gray-400 mt-1">用於將表單資料自動寫入 Google 試算表。<a href="#" onclick="openScriptGuide()" class="text-blue-500 underline">如何設定？</a></p>
       </div>
 
@@ -714,7 +718,7 @@
     </div>
     <div class="modal-footer">
       <button class="btn btn-outline" onclick="closeModal('settingsModal')">取消</button>
-      <button class="btn" style="background:var(--primary);color:#fff" onclick="saveSettings()">儲存設定</button>
+      <button class="btn" style="background:var(--primary);color:#fff" onclick="saveSettings()">儲存並關閉</button>
     </div>
   </div>
 </div>
@@ -1098,18 +1102,46 @@ function closeModal(id) {
   document.getElementById(id).style.display = 'none';
 }
 
-function sendEmail() {
+function setSubmitBtnsLoading(loading) {
+  const b1 = document.getElementById('btnSheetsOnly');
+  const b2 = document.getElementById('btnSendEmail');
+  if (loading) {
+    b1.disabled = b2.disabled = true;
+    b1.textContent = '⏳ 上傳中…';
+    b2.textContent = '⏳ 上傳中…';
+  } else {
+    b1.disabled = b2.disabled = false;
+    b1.innerHTML = '📊 僅存入試算表';
+    b2.innerHTML = '✉ 開啟郵件程式';
+  }
+}
+
+async function handleSheetsOnly() {
+  setSubmitBtnsLoading(true);
+  await sendToSheets();
+  setSubmitBtnsLoading(false);
+  closeModal('submitModal');
+}
+
+async function handleSendEmail() {
   const to = document.getElementById('mgrEmail').value.trim();
   if (!to) { alert('請輸入主管 Email'); return; }
-  const cc = document.getElementById('ccEmail').value.trim();
+
+  // ① 先上傳附件＋寫入試算表
+  setSubmitBtnsLoading(true);
+  await sendToSheets();
+  setSubmitBtnsLoading(false);
+
+  // ② 再開啟 mailto（避免瀏覽器在 fetch 途中跳走導致中斷）
+  const cc   = document.getElementById('ccEmail').value.trim();
   const subj = encodeURIComponent(document.getElementById('mailSubject').value);
   const body = encodeURIComponent(document.getElementById('mailBody').value);
   let mailto = `mailto:${to}?subject=${subj}&body=${body}`;
   if (cc) mailto += `&cc=${encodeURIComponent(cc)}`;
-  window.location.href = mailto;
-  sendToSheets();
+  window.open(mailto, '_self');
+
   closeModal('submitModal');
-  toast('✅ 已開啟郵件程式');
+  toast('✅ 資料已儲存，郵件程式已開啟');
 }
 
 
@@ -1251,6 +1283,33 @@ function saveSettings() {
 function openScriptGuide() {
   document.getElementById('scriptCode').textContent = SCRIPT_CODE;
   document.querySelector('details').open = true;
+}
+
+async function testConnection() {
+  const url = document.getElementById('cfg_sheetUrl').value.trim();
+  const statusEl = document.getElementById('connStatus');
+  if (!url) {
+    statusEl.className = 'text-xs mt-1 text-red-600';
+    statusEl.textContent = '❌ 請先填入 URL';
+    return;
+  }
+  statusEl.className = 'text-xs mt-1 text-gray-500';
+  statusEl.textContent = '⏳ 測試中…';
+
+  try {
+    const res  = await fetch(url);
+    const json = await res.json();
+    if (json.status === 'ok') {
+      statusEl.className = 'text-xs mt-1 text-green-700 font-semibold';
+      statusEl.textContent = '✅ 連線成功！Apps Script 正常運作';
+    } else {
+      statusEl.className = 'text-xs mt-1 text-red-600';
+      statusEl.textContent = '⚠ 回應異常：' + JSON.stringify(json);
+    }
+  } catch(e) {
+    statusEl.className = 'text-xs mt-1 text-red-600';
+    statusEl.textContent = '❌ 連線失敗：' + e.message + '（請確認 URL 正確且已部署）';
+  }
 }
 
 
