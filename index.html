@@ -705,7 +705,7 @@
 //  ★ 管理員設定區 — 只需設定這裡，使用者不需要做任何設定
 // ════════════════════════════════════════════
 const CONFIG = {
-  scriptUrl:     'https://script.google.com/macros/s/AKfycbyy_XtzVl8hxf-IH2aznbGjbxVfCzBlc0hxtDPUSFANkSXFAu_ZEXYU5WbTKeI31zKr6A/exec',
+  scriptUrl:     'https://script.google.com/macros/s/AKfycbwDm8THXxjgsj7aL7fyzGVFd_YNgOzRewTpFOTKZYcwRU-lPJ1H6tZkHW0TBbG19duBag/exec',
   driveFolderId: '1hS_srjNQvPOMgw0J9EAMTNulYGYZHJtd',
   defaultMgrEmail: '',   // 預設主管 email（選填）
 };
@@ -1027,38 +1027,45 @@ function getWordBase64(d) {
   });
 }
 
-// PDF → base64（html2canvas + jsPDF 截圖方式，支援中文）
+// PDF → base64（使用 Word 樣板渲染，輸出乾淨文件格式）
 async function getPDFBase64() {
   const { jsPDF } = window.jspdf;
-  const mainEl   = document.querySelector('main');
+  const d = collectFormData();
 
-  // 截圖前隱藏固定定位元素（action bar 等）
-  const hiddenEls = [...document.querySelectorAll('.action-bar, .modal-overlay')];
-  hiddenEls.forEach(el => { el._prevDisplay = el.style.display; el.style.display = 'none'; });
+  // 建立隱藏渲染容器（794px = A4 96dpi 寬度）
+  const wrap = document.createElement('div');
+  wrap.style.cssText = [
+    'position:absolute', 'top:0', 'left:-9999px',
+    'width:794px', 'background:#fff',
+    'font-family:"Microsoft JhengHei","PingFang TC",Arial,sans-serif',
+    'font-size:13px', 'color:#333', 'padding:0'
+  ].join(';');
+
+  // 從 Word 樣板取 body 內容注入容器
+  const fullHtml   = buildDocumentHTML(d);
+  const bodyMatch  = fullHtml.match(/<body[^>]*>([\s\S]*)<\/body>/i);
+  wrap.innerHTML   = bodyMatch ? bodyMatch[1] : fullHtml;
+  document.body.appendChild(wrap);
 
   let canvas;
   try {
-    canvas = await html2canvas(mainEl, {
+    canvas = await html2canvas(wrap, {
       scale: 1.5,
       useCORS: true,
       logging: false,
-      backgroundColor: '#FAF3EC',
-      scrollY: 0,
-      y: 0,
-      windowWidth:  mainEl.scrollWidth,
-      windowHeight: mainEl.scrollHeight,
+      backgroundColor: '#fff',
+      windowWidth: 794,
     });
   } finally {
-    // 還原隱藏元素
-    hiddenEls.forEach(el => { el.style.display = el._prevDisplay; });
+    document.body.removeChild(wrap);
   }
 
-  const pdf   = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' });
-  const pageW = pdf.internal.pageSize.getWidth();
-  const pageH = pdf.internal.pageSize.getHeight();
-  const imgW  = pageW;
-  const imgH  = (canvas.height * imgW) / canvas.width;
-  const imgData = canvas.toDataURL('image/jpeg', 0.85);
+  const pdf     = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' });
+  const pageW   = pdf.internal.pageSize.getWidth();
+  const pageH   = pdf.internal.pageSize.getHeight();
+  const imgW    = pageW;
+  const imgH    = (canvas.height * imgW) / canvas.width;
+  const imgData = canvas.toDataURL('image/jpeg', 0.88);
   pdf.addImage(imgData, 'JPEG', 0, 0, imgW, imgH);
   let remaining = imgH - pageH;
   let offset    = -pageH;
@@ -1068,10 +1075,9 @@ async function getPDFBase64() {
     offset    -= pageH;
     remaining -= pageH;
   }
-  const pdfBlob = pdf.output('blob');
   return new Promise((resolve, reject) => {
     const reader = new FileReader();
-    reader.readAsDataURL(pdfBlob);
+    reader.readAsDataURL(pdf.output('blob'));
     reader.onload  = () => resolve(reader.result.split(',')[1]);
     reader.onerror = reject;
   });
