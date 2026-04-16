@@ -1102,7 +1102,7 @@ async function sendToSheets() {
     await fetch(url, {
       method: 'POST',
       mode: 'no-cors',
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 'Content-Type': 'text/plain' },
       body: JSON.stringify(d),
     });
     toast('✅ 資料已同步至 Google 試算表');
