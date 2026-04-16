@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>法芮｜加盟申請暨商圈評估表</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
   <style>
     :root {
       --primary:   #4D2126;
@@ -703,7 +705,7 @@
 //  ★ 管理員設定區 — 只需設定這裡，使用者不需要做任何設定
 // ════════════════════════════════════════════
 const CONFIG = {
-  scriptUrl:     'https://script.google.com/macros/s/AKfycbw2-5HX3EDJFyhxLfchuunXlcdp3_rWD9pZKTndpT3ou0qYHu-SwnM7tUsO9Ej5LVsgzQ/exec',
+  scriptUrl:     'https://script.google.com/macros/s/AKfycbxgUi3qR6etAJ6WqXIlRZxd6bDaQl1k3f08uHdpQfoipoA-G2pRwk7EurgdF9aQhAeDhQ/exec',
   driveFolderId: '1hS_srjNQvPOMgw0J9EAMTNulYGYZHJtd',
   defaultMgrEmail: '',   // 預設主管 email（選填）
 };
@@ -932,116 +934,134 @@ function exportPDF() {
 // ════════════════════════════════════════════
 //  Word Export (Office HTML)
 // ════════════════════════════════════════════
-function exportWord() {
-  const d = collectFormData();
-
+// ────────────────────────────────────────────
+//  Word 文件 HTML 樣板（供下載 & 上傳共用）
+// ────────────────────────────────────────────
+function buildDocumentHTML(d) {
   function row(label, value) {
     return `<tr>
       <td style="width:30%;background:#FAF3EC;font-weight:bold;padding:6px 10px;border:1px solid #ccc;color:#4D2126;vertical-align:top;">${label}</td>
       <td style="padding:6px 10px;border:1px solid #ccc;vertical-align:top;">${value || '　'}</td>
     </tr>`;
   }
-
   function section(title, rows) {
-    return `
-      <h2 style="background:#4D2126;color:#fff;padding:8px 14px;font-size:14px;border-radius:4px;margin-top:18px;">${title}</h2>
+    return `<h2 style="background:#4D2126;color:#fff;padding:8px 14px;font-size:14px;border-radius:4px;margin-top:18px;">${title}</h2>
       <table style="width:100%;border-collapse:collapse;font-size:13px;">${rows}</table>`;
   }
-
-  const html = `
-<html xmlns:o="urn:schemas-microsoft-com:office:office"
+  return `<html xmlns:o="urn:schemas-microsoft-com:office:office"
       xmlns:w="urn:schemas-microsoft-com:office:word"
       xmlns="http://www.w3.org/TR/REC-html40">
-<head>
-<meta charset="UTF-8"/>
+<head><meta charset="UTF-8"/>
 <meta name="ProgId" content="Word.Document"/>
 <meta name="Generator" content="Microsoft Word 15"/>
 <style>
   body { font-family: "Microsoft JhengHei", "PingFang TC", Arial, sans-serif; font-size:13px; color:#333; margin:20mm; }
   h1 { color:#4D2126; text-align:center; border-bottom:3px solid #AA7064; padding-bottom:8px; }
-</style>
-</head>
+</style></head>
 <body>
 <h1>法芮 加盟申請暨商圈評估表</h1>
 <p style="text-align:center;color:#7D6050;font-size:12px;">FARAY Franchise Application &amp; Trade Area Evaluation Form</p>
 <p style="text-align:center;font-size:13px;color:#4D2126;font-weight:bold;border:2px solid #AA7064;display:inline-block;padding:4px 20px;border-radius:6px;margin:0 auto 10px;">申請編號：${d.appNo}</p>
-
 ${section('A. 基本資料', `
-  ${row('申請編號', d.appNo)}
-  ${row('申請類型', d.applyType)}
-  ${row('申請門市名稱', d.storeName)}
-  ${row('申請人／法人名稱', d.applicantName)}
-  ${row('統一編號／身分證字號', d.idNumber)}
-  ${row('負責人姓名', d.ownerName)}
-  ${row('手機', d.phone)}
-  ${row('E-mail', d.email)}
-  ${row('LINE ID', d.lineId)}
-  ${row('通訊地址', d.contactAddr)}
-  ${row('擬設店址／商圈', d.storeAddr)}
+  ${row('申請編號', d.appNo)}${row('申請類型', d.applyType)}${row('申請門市名稱', d.storeName)}
+  ${row('申請人／法人名稱', d.applicantName)}${row('統一編號／身分證字號', d.idNumber)}
+  ${row('負責人姓名', d.ownerName)}${row('手機', d.phone)}${row('E-mail', d.email)}
+  ${row('LINE ID', d.lineId)}${row('通訊地址', d.contactAddr)}${row('擬設店址／商圈', d.storeAddr)}
   ${row('店面狀態', d.storeStatus + (d.storePing ? '　坪數約 '+d.storePing+' 坪' : ''))}
-  ${row('預計簽約日期', d.signDate)}
-  ${row('預計開幕日期', d.openDate)}
-`)}
-
+  ${row('預計簽約日期', d.signDate)}${row('預計開幕日期', d.openDate)}`)}
 ${section('B. 背景與經營能力評估', `
-  ${row('目前主要工作', d.currentJob)}
-  ${row('過往經營經驗', d.experience)}
+  ${row('目前主要工作', d.currentJob)}${row('過往經營經驗', d.experience)}
   ${row('股東結構', d.shareholders)}
   ${row('主要投入人員', '店長：'+d.mgr+'　技術：'+d.tech+'　行政：'+d.admin)}
   ${row('其他投資或關係企業', d.otherBiz + (d.otherBizDetail ? '　'+d.otherBizDetail : ''))}
-  ${row('重大訴訟記錄', d.legalIssue + (d.legalIssueDetail ? '　'+d.legalIssueDetail : ''))}
-`)}
-
+  ${row('重大訴訟記錄', d.legalIssue + (d.legalIssueDetail ? '　'+d.legalIssueDetail : ''))}`)}
 ${section('C. 財務與店務規劃', `
-  ${row('加盟金', d.budgetFee)}
-  ${row('裝潢預算', d.budgetDecor)}
-  ${row('設備預算', d.budgetEquip)}
-  ${row('週轉金', d.budgetCap)}
+  ${row('加盟金', d.budgetFee)}${row('裝潢預算', d.budgetDecor)}
+  ${row('設備預算', d.budgetEquip)}${row('週轉金', d.budgetCap)}
   ${row('資金來源', d.fundSource)}
   ${row('前6月虧損承擔', d.lossCapacity + (d.lossCapacityDetail ? '　'+d.lossCapacityDetail : ''))}
-  ${row('月租金／押金', d.rentMonth + '　' + d.rentDeposit + '　租期 ' + d.rentPeriod)}
-  ${row('人事規劃', d.staffPlan)}
-  ${row('營運規劃', d.operPlan)}
-`)}
-
+  ${row('月租金／押金', (d.rentMonth||'')+'　'+(d.rentDeposit||'')+'　租期 '+(d.rentPeriod||''))}
+  ${row('人事規劃', d.staffPlan)}${row('營運規劃', d.operPlan)}`)}
 ${section('D. 商圈與店址評估', `
-  ${row('商圈類型', d.areaType)}
-  ${row('主要客群', d.targetCustomer)}
-  ${row('周邊競品', d.competition)}
-  ${row('交通與能見度', d.traffic)}
-  ${row('總部商圈評估', d.hqOpinion)}
-  ${row('風險提醒', d.riskNote)}
-`)}
-
+  ${row('商圈類型', d.areaType)}${row('主要客群', d.targetCustomer)}
+  ${row('周邊競品', d.competition)}${row('交通與能見度', d.traffic)}
+  ${row('總部商圈評估', d.hqOpinion)}${row('風險提醒', d.riskNote)}`)}
 ${section('E. 經營理念配合度', `
-  ${row('確認同意條款編號', d.confirmItems || '（未全部確認）')}
-`)}
-
-${section('F. 申請人聲明與審查結論', `
-  ${row('應檢附文件', d.docs)}
-  ${row('已上傳附件', d.attachments || '無')}
-  ${row('申請人', d.sigApplicantName)}
-  ${row('申請日期', d.applyDate)}
-  ${row('面談主管意見', d.mgr1Opinion)}
-  ${row('審查結論', d.reviewResult)}
-  ${row('面談主管', d.sigMgr1Name + (d.sigMgr1Date ? '　'+d.sigMgr1Date : ''))}
-  ${row('審查主管', d.sigMgr2Name + (d.sigMgr2Date ? '　'+d.sigMgr2Date : ''))}
-`)}
-
+  ${row('確認同意條款編號', d.confirmItems || '（未全部確認）')}`)}
+${section('F. 申請人聲明', `
+  ${row('應檢附文件', d.docs)}${row('已上傳附件', d.attachments || '無')}
+  ${row('申請人姓名', d.sigApplicantName)}${row('申請日期', d.applyDate)}
+  ${row('業務面談總意見', d.mgr1Opinion)}`)}
 <p style="margin-top:24px;font-size:11px;color:#999;text-align:right;">填表業務：${d.salesName}　列印時間：${d.submittedAt}</p>
 </body></html>`;
+}
 
+function exportWord() {
+  const d = collectFormData();
+  const html = buildDocumentHTML(d);
   const blob = new Blob(['\ufeff' + html], { type: 'application/msword;charset=utf-8' });
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement('a');
+  const url  = URL.createObjectURL(blob);
+  const a    = document.createElement('a');
   a.href = url;
-  const name = (d.storeName || '加盟申請') + '_法芮評估表.doc';
-  a.download = name;
-  document.body.appendChild(a);
-  a.click();
-  document.body.removeChild(a);
-  URL.revokeObjectURL(url);
-  toast('✅ Word 檔案已下載：' + name);
+  a.download = docFileName(d) + '.doc';
+  document.body.appendChild(a); a.click();
+  document.body.removeChild(a); URL.revokeObjectURL(url);
+  toast('✅ Word 檔案已下載：' + a.download);
+}
+
+// 統一檔名格式：申請編號_申請人姓名_店名
+function docFileName(d) {
+  const parts = [d.appNo, d.applicantName, d.storeName].filter(Boolean);
+  return parts.join('_') || '法芮加盟申請';
+}
+
+// Word → base64
+function getWordBase64(d) {
+  const html = buildDocumentHTML(d);
+  const blob = new Blob(['\ufeff' + html], { type: 'application/msword;charset=utf-8' });
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.readAsDataURL(blob);
+    reader.onload  = () => resolve(reader.result.split(',')[1]);
+    reader.onerror = reject;
+  });
+}
+
+// PDF → base64（html2canvas + jsPDF 截圖方式，支援中文）
+async function getPDFBase64() {
+  const { jsPDF } = window.jspdf;
+  const mainEl = document.querySelector('main');
+  const canvas = await html2canvas(mainEl, {
+    scale: 1.5,
+    useCORS: true,
+    logging: false,
+    backgroundColor: '#FAF3EC',
+    scrollY: -window.scrollY,
+    windowWidth:  document.documentElement.scrollWidth,
+    windowHeight: document.documentElement.scrollHeight,
+  });
+  const pdf   = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' });
+  const pageW = pdf.internal.pageSize.getWidth();
+  const pageH = pdf.internal.pageSize.getHeight();
+  const imgW  = pageW;
+  const imgH  = (canvas.height * imgW) / canvas.width;
+  const imgData = canvas.toDataURL('image/jpeg', 0.85);
+  pdf.addImage(imgData, 'JPEG', 0, 0, imgW, imgH);
+  let remaining = imgH - pageH;
+  let offset    = -pageH;
+  while (remaining > 0) {
+    pdf.addPage();
+    pdf.addImage(imgData, 'JPEG', 0, offset, imgW, imgH);
+    offset    -= pageH;
+    remaining -= pageH;
+  }
+  const pdfBlob = pdf.output('blob');
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.readAsDataURL(pdfBlob);
+    reader.onload  = () => resolve(reader.result.split(',')[1]);
+    reader.onerror = reject;
+  });
 }
 
 
@@ -1110,21 +1130,50 @@ async function handleSendEmail() {
   const to = document.getElementById('mgrEmail').value.trim();
   if (!to) { alert('請輸入主管 Email'); return; }
 
-  // ① 先上傳附件＋寫入試算表
   setSubmitBtnsLoading(true);
+
+  // ① 寫入試算表 + 上傳附件
+  toast('⏳ 步驟 1/3：寫入試算表與附件…');
   await sendToSheets();
+
+  // ② 產生 PDF & Word，上傳到 Drive，並透過 Apps Script 寄信（含 PDF 附件）
+  try {
+    toast('⏳ 步驟 2/3：產生 PDF（可能需要數秒）…');
+    const d        = collectFormData();
+    const fileName = docFileName(d);
+    const [pdfB64, wordB64] = await Promise.all([
+      getPDFBase64(),
+      getWordBase64(d),
+    ]);
+
+    toast('⏳ 步驟 3/3：上傳文件並發送郵件…');
+    const cc      = document.getElementById('ccEmail').value.trim();
+    const subject = document.getElementById('mailSubject').value;
+    const body    = document.getElementById('mailBody').value;
+
+    await postJSON({
+      _sendDocs:    true,
+      appNo:        d.appNo,
+      applicantName: d.applicantName,
+      storeName:    d.storeName,
+      driveFolderId: CONFIG.driveFolderId,
+      fileName:     fileName,
+      pdfData:      pdfB64,
+      wordData:     wordB64,
+      emailTo:      to,
+      emailCc:      cc,
+      emailSubject: subject,
+      emailBody:    body,
+    });
+
+    toast('✅ 完成！PDF + Word 已上傳 Drive，郵件（含 PDF 附件）已發送至 ' + to);
+  } catch(err) {
+    console.error(err);
+    toast('⚠️ 文件上傳或郵件發送時發生錯誤，請確認網路與 Apps Script 設定。');
+  }
+
   setSubmitBtnsLoading(false);
-
-  // ② 再開啟 mailto（避免瀏覽器在 fetch 途中跳走導致中斷）
-  const cc   = document.getElementById('ccEmail').value.trim();
-  const subj = encodeURIComponent(document.getElementById('mailSubject').value);
-  const body = encodeURIComponent(document.getElementById('mailBody').value);
-  let mailto = `mailto:${to}?subject=${subj}&body=${body}`;
-  if (cc) mailto += `&cc=${encodeURIComponent(cc)}`;
-  window.open(mailto, '_self');
-
   closeModal('submitModal');
-  toast('✅ 資料已儲存，郵件程式已開啟');
 }
 
 
@@ -1304,6 +1353,121 @@ function doPost(e) {
       .createTextOutput(JSON.stringify({ status: 'error', msg: err.message }))
       .setMimeType(ContentService.MimeType.JSON);
   }
+}`;  // (此為舊版，請參考下方最新版本)
+
+// ════════════════════════════════════════════
+//  ★ 最新 Apps Script v3（請貼此段到 Apps Script）
+// ════════════════════════════════════════════
+const SCRIPT_CODE_V3 = `// ══════════════════════════════════════════
+// 法芮加盟申請表 — Google Apps Script  v3
+// 部署設定：執行身分→我　誰可以存取→所有人
+// appsscript.json 須加入三個 oauthScopes：
+//   drive / spreadsheets / mail.send
+// ══════════════════════════════════════════
+
+var ROOT_FOLDER_ID = '1hS_srjNQvPOMgw0J9EAMTNulYGYZHJtd';
+
+function doGet(e) {
+  try {
+    var folder = DriveApp.getFolderById(ROOT_FOLDER_ID);
+    return ContentService
+      .createTextOutput(JSON.stringify({ status:'ok', msg:'Script is alive', folder:folder.getName() }))
+      .setMimeType(ContentService.MimeType.JSON);
+  } catch(err) {
+    return ContentService
+      .createTextOutput(JSON.stringify({ status:'error', msg:err.message }))
+      .setMimeType(ContentService.MimeType.JSON);
+  }
+}
+
+function getOrCreateSubFolder(parent, name) {
+  var iter = parent.getFoldersByName(name);
+  return iter.hasNext() ? iter.next() : parent.createFolder(name);
+}
+
+function doPost(e) {
+  try {
+    var data     = JSON.parse(e.postData.contents);
+    var folderId = data.driveFolderId || ROOT_FOLDER_ID;
+
+    // ══ 分支 1：上傳 PDF + Word 並寄信 ══
+    if (data._sendDocs === true) {
+      var rootFolder = DriveApp.getFolderById(folderId);
+      var appNo      = data.appNo || Utilities.formatDate(new Date(),'Asia/Taipei','yyyyMMdd');
+      var subName    = appNo + '_' + (data.applicantName || '申請人');
+      var subFolder  = getOrCreateSubFolder(rootFolder, subName);
+      var fileName   = data.fileName || subName;
+      var pdfUrl = '', wordUrl = '', pdfAttach = null;
+
+      if (data.pdfData) {
+        try {
+          var pdfBlob = Utilities.newBlob(Utilities.base64Decode(data.pdfData), 'application/pdf', fileName + '.pdf');
+          var pdfFile = subFolder.createFile(pdfBlob);
+          pdfFile.setSharing(DriveApp.Access.ANYONE_WITH_LINK, DriveApp.Permission.VIEW);
+          pdfUrl    = pdfFile.getUrl();
+          pdfAttach = pdfBlob;
+        } catch(pe) { Logger.log('PDF 失敗：' + pe.message); }
+      }
+      if (data.wordData) {
+        try {
+          var wordBlob = Utilities.newBlob(Utilities.base64Decode(data.wordData), 'application/msword', fileName + '.doc');
+          var wordFile = subFolder.createFile(wordBlob);
+          wordFile.setSharing(DriveApp.Access.ANYONE_WITH_LINK, DriveApp.Permission.VIEW);
+          wordUrl = wordFile.getUrl();
+        } catch(we) { Logger.log('Word 失敗：' + we.message); }
+      }
+      if (data.emailTo) {
+        try {
+          var opts = { name:'法芮加盟審查系統' };
+          if (pdfAttach) opts.attachments = [pdfAttach];
+          if (data.emailCc) opts.cc = data.emailCc;
+          MailApp.sendEmail(data.emailTo, data.emailSubject || '【法芮加盟申請】請主管簽核審查', data.emailBody || '', opts);
+        } catch(me) { Logger.log('Email 失敗：' + me.message); }
+      }
+      return ContentService
+        .createTextOutput(JSON.stringify({ status:'ok', pdfUrl:pdfUrl, wordUrl:wordUrl }))
+        .setMimeType(ContentService.MimeType.JSON);
+    }
+
+    // ══ 分支 2：上傳附件（圖片/文件） ══
+    if (data._filesOnly === true) {
+      var rootFolder2 = DriveApp.getFolderById(folderId);
+      var sub2 = getOrCreateSubFolder(rootFolder2, (data.appNo||'unknown')+'_'+(data.applicantName||'申請人'));
+      var files = data.files || [], links = [];
+      for (var i = 0; i < files.length; i++) {
+        var f = files[i];
+        try {
+          var cf = sub2.createFile(Utilities.newBlob(Utilities.base64Decode(f.data), f.type||'application/octet-stream', f.name));
+          cf.setSharing(DriveApp.Access.ANYONE_WITH_LINK, DriveApp.Permission.VIEW);
+          links.push(f.name + ': ' + cf.getUrl());
+        } catch(fe) { links.push(f.name + ': 失敗(' + fe.message + ')'); }
+      }
+      return ContentService
+        .createTextOutput(JSON.stringify({ status:'ok', uploaded:links.length }))
+        .setMimeType(ContentService.MimeType.JSON);
+    }
+
+    // ══ 分支 3：寫入試算表 ══
+    delete data.files; delete data.driveFolderId; delete data._filesOnly; delete data._sendDocs;
+    var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+    var keys  = Object.keys(data);
+    if (sheet.getLastRow() === 0) sheet.appendRow(keys);
+    sheet.appendRow(keys.map(function(k){ return data[k]; }));
+    return ContentService
+      .createTextOutput(JSON.stringify({ status:'ok', rows:1 }))
+      .setMimeType(ContentService.MimeType.JSON);
+
+  } catch(err) {
+    return ContentService
+      .createTextOutput(JSON.stringify({ status:'error', msg:err.message }))
+      .setMimeType(ContentService.MimeType.JSON);
+  }
+}
+
+function testDrive() {
+  var folder = DriveApp.getFolderById(ROOT_FOLDER_ID);
+  var sub = getOrCreateSubFolder(folder, 'TEST_測試資料夾');
+  Logger.log(sub.createFile('test_'+new Date().getTime()+'.txt','測試',MimeType.PLAIN_TEXT).getUrl());
 }`;
 
 function openSettings() {
@@ -1312,7 +1476,7 @@ function openSettings() {
     const el = document.getElementById(k);
     if (el) el.value = localStorage.getItem(k) || '';
   });
-  document.getElementById('scriptCode').textContent = SCRIPT_CODE;
+  document.getElementById('scriptCode').textContent = SCRIPT_CODE_V3;
   document.getElementById('settingsModal').style.display = 'flex';
 }
 
@@ -1326,7 +1490,7 @@ function saveSettings() {
 }
 
 function openScriptGuide() {
-  document.getElementById('scriptCode').textContent = SCRIPT_CODE;
+  document.getElementById('scriptCode').textContent = SCRIPT_CODE_V3;
   document.querySelector('details').open = true;
 }
 
