@@ -726,6 +726,15 @@
 
 <script>
 // ════════════════════════════════════════════
+//  ★ 管理員設定區 — 只需設定這裡，使用者不需要做任何設定
+// ════════════════════════════════════════════
+const CONFIG = {
+  scriptUrl:     'https://script.google.com/macros/s/AKfycbzbmKZ5GRqYYZxXS8Yk37g1jRuRrw0e7zDAXR27cCUAPbObzsv0SuaPOLYjrlQFjv3tPw/exec',
+  driveFolderId: '1hS_srjNQvPOMgw0J9EAMTNulYGYZHJtd',
+  defaultMgrEmail: '',   // 預設主管 email（選填）
+};
+
+// ════════════════════════════════════════════
 //  Utility
 // ════════════════════════════════════════════
 function toast(msg, duration = 2800) {
@@ -1068,7 +1077,7 @@ ${section('F. 申請人聲明與審查結論', `
 function openSubmitModal() {
   const d = collectFormData();
   // Pre-fill email
-  const savedEmail = localStorage.getItem('cfg_mgrEmail') || '';
+  const savedEmail = localStorage.getItem('cfg_mgrEmail') || CONFIG.defaultMgrEmail || '';
   document.getElementById('mgrEmail').value = savedEmail;
 
   // Build mail body
@@ -1159,15 +1168,16 @@ function fileToBase64(file) {
 }
 
 async function sendToSheets() {
-  const url = localStorage.getItem('cfg_sheetUrl');
+  const url = CONFIG.scriptUrl;
   if (!url) {
-    toast('⚠ 尚未設定 Google Apps Script URL，資料未同步');
+    toast('❌ 尚未設定 Script URL，請聯絡管理員');
     return;
   }
 
   const d = collectFormData();
+  d.driveFolderId = CONFIG.driveFolderId;   // 告訴 Apps Script 要傳到哪個資料夾
 
-  // 將上傳的附件轉為 base64，一起送出
+  // 將上傳的附件轉為 base64
   if (uploadedFiles.length > 0) {
     toast('⏳ 正在上傳附件，請稍候…');
     const fileData = [];
@@ -1176,22 +1186,25 @@ async function sendToSheets() {
         const b64 = await fileToBase64(file);
         fileData.push({ name: file.name, type: file.type || 'application/octet-stream', data: b64 });
       } catch(err) {
-        console.warn('檔案轉換失敗：', file.name, err);
+        console.warn('附件轉換失敗：', file.name, err);
       }
     }
     d.files = fileData;
+  } else {
+    d.files = [];
   }
 
   try {
+    toast('⏳ 正在寫入試算表…');
     await fetch(url, {
       method: 'POST',
       mode: 'no-cors',
       headers: { 'Content-Type': 'text/plain' },
       body: JSON.stringify(d),
     });
-    toast('✅ 資料與附件已同步至 Google');
+    toast('✅ 資料已成功送出！');
   } catch(e) {
-    toast('❌ 同步失敗：' + e.message);
+    toast('❌ 送出失敗：' + e.message);
   }
 }
 
@@ -1199,20 +1212,31 @@ async function sendToSheets() {
 // ════════════════════════════════════════════
 //  Settings
 // ════════════════════════════════════════════
-const SCRIPT_CODE = `// ── 法芮加盟申請表 Google Apps Script ──
-// 部署為「網頁應用程式」
+const SCRIPT_CODE = `// ══════════════════════════════════════════
+// 法芮加盟申請表 — Google Apps Script
+// 部署設定：
 //   執行身分 → 我（你的帳號）
 //   誰可以存取 → 所有人
-// ★ 每次修改程式碼後，必須「部署 > 管理部署 > 選新版本 > 部署」才會生效
+// ★ 修改後必須「部署 > 管理部署 > 選新版本 > 部署」才生效
+// ══════════════════════════════════════════
 
-// ★ Google Drive 附件資料夾 ID（從資料夾網址複製）
-var DRIVE_FOLDER_ID = '1hS_srjNQvPOMgw0J9EAMTNulYGYZHJtd';
-
-// 測試用：在瀏覽器直接開啟 Script URL 應回傳 {"status":"ok","msg":"Script is alive"}
+// 測試 GET：確認 Script 正常 & Drive 資料夾可存取
 function doGet(e) {
-  return ContentService
-    .createTextOutput(JSON.stringify({ status: 'ok', msg: 'Script is alive' }))
-    .setMimeType(ContentService.MimeType.JSON);
+  try {
+    var folderId = '1hS_srjNQvPOMgw0J9EAMTNulYGYZHJtd';
+    var folder   = DriveApp.getFolderById(folderId);
+    return ContentService
+      .createTextOutput(JSON.stringify({
+        status: 'ok',
+        msg: 'Script is alive',
+        folder: folder.getName()
+      }))
+      .setMimeType(ContentService.MimeType.JSON);
+  } catch(err) {
+    return ContentService
+      .createTextOutput(JSON.stringify({ status: 'error', msg: err.message }))
+      .setMimeType(ContentService.MimeType.JSON);
+  }
 }
 
 function doPost(e) {
@@ -1220,41 +1244,47 @@ function doPost(e) {
     var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
     var data  = JSON.parse(e.postData.contents);
     var files = data.files || [];
-    delete data.files;   // base64 不寫入試算表
+
+    // Drive 資料夾 ID：優先從表單傳入，否則用預設值
+    var folderId = data.driveFolderId || '1hS_srjNQvPOMgw0J9EAMTNulYGYZHJtd';
+    delete data.files;
+    delete data.driveFolderId;
 
     // ── 上傳附件到 Drive ──
     var fileLinks = [];
     if (files.length > 0) {
-      var folder  = DriveApp.getFolderById(DRIVE_FOLDER_ID);
-      var appNo   = data.appNo || Utilities.formatDate(new Date(),'Asia/Taipei','yyyyMMdd_HHmm');
-      var subName = appNo + '_' + (data.applicantName || '申請人');
+      var folder    = DriveApp.getFolderById(folderId);
+      var appNo     = data.appNo || Utilities.formatDate(new Date(), 'Asia/Taipei', 'yyyyMMdd_HHmm');
+      var subName   = appNo + '_' + (data.applicantName || '申請人');
       var subFolder = folder.createFolder(subName);
 
-      files.forEach(function(f) {
+      for (var i = 0; i < files.length; i++) {
+        var f = files[i];
         try {
-          var blob    = Utilities.newBlob(Utilities.base64Decode(f.data), f.type, f.name);
+          var decoded = Utilities.base64Decode(f.data);
+          var blob    = Utilities.newBlob(decoded, f.type || 'application/octet-stream', f.name);
           var created = subFolder.createFile(blob);
           created.setSharing(DriveApp.Access.ANYONE_WITH_LINK, DriveApp.Permission.VIEW);
           fileLinks.push(f.name + ': ' + created.getUrl());
-        } catch(err) {
-          fileLinks.push(f.name + ': 上傳失敗 (' + err.message + ')');
+        } catch(fe) {
+          fileLinks.push(f.name + ': 失敗(' + fe.message + ')');
         }
-      });
+      }
     }
-    data.attachmentLinks = fileLinks.join('\\n');
+    data.附件連結 = fileLinks.join('\\n');
 
     // ── 寫入試算表 ──
+    var keys = Object.keys(data);
     if (sheet.getLastRow() === 0) {
-      sheet.appendRow(Object.keys(data));
+      sheet.appendRow(keys);
     }
-    sheet.appendRow(Object.values(data));
+    sheet.appendRow(keys.map(function(k){ return data[k]; }));
 
     return ContentService
-      .createTextOutput(JSON.stringify({ status: 'ok' }))
+      .createTextOutput(JSON.stringify({ status: 'ok', files: fileLinks.length }))
       .setMimeType(ContentService.MimeType.JSON);
 
   } catch(err) {
-    // 將錯誤訊息也回傳，方便除錯
     return ContentService
       .createTextOutput(JSON.stringify({ status: 'error', msg: err.message }))
       .setMimeType(ContentService.MimeType.JSON);
@@ -1286,29 +1316,50 @@ function openScriptGuide() {
 }
 
 async function testConnection() {
-  const url = document.getElementById('cfg_sheetUrl').value.trim();
+  const url = CONFIG.scriptUrl;
   const statusEl = document.getElementById('connStatus');
+  statusEl.classList.remove('hidden');
+
   if (!url) {
     statusEl.className = 'text-xs mt-1 text-red-600';
-    statusEl.textContent = '❌ 請先填入 URL';
+    statusEl.textContent = '❌ CONFIG.scriptUrl 尚未設定';
     return;
   }
-  statusEl.className = 'text-xs mt-1 text-gray-500';
-  statusEl.textContent = '⏳ 測試中…';
 
+  // Step 1：測試 GET（同時確認 Drive 資料夾可存取）
+  statusEl.className = 'text-xs mt-1 text-gray-500';
+  statusEl.textContent = '⏳ 步驟 1/2：測試連線與 Drive 資料夾…';
   try {
     const res  = await fetch(url);
     const json = await res.json();
-    if (json.status === 'ok') {
-      statusEl.className = 'text-xs mt-1 text-green-700 font-semibold';
-      statusEl.textContent = '✅ 連線成功！Apps Script 正常運作';
-    } else {
-      statusEl.className = 'text-xs mt-1 text-red-600';
-      statusEl.textContent = '⚠ 回應異常：' + JSON.stringify(json);
-    }
+    if (json.status !== 'ok') throw new Error(JSON.stringify(json));
+    const folderInfo = json.folder ? `（資料夾：${json.folder}）` : '';
+    statusEl.textContent = `✅ 步驟 1 通過 ${folderInfo}，正在測試寫入…`;
   } catch(e) {
     statusEl.className = 'text-xs mt-1 text-red-600';
-    statusEl.textContent = '❌ 連線失敗：' + e.message + '（請確認 URL 正確且已部署）';
+    statusEl.textContent = '❌ 連線失敗：' + e.message;
+    return;
+  }
+
+  // Step 2：測試 POST 寫入試算表
+  try {
+    await fetch(url, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'text/plain' },
+      body: JSON.stringify({
+        appNo: 'TEST-連線測試',
+        applicantName: '【系統測試，請刪除此列】',
+        submittedAt: new Date().toLocaleString('zh-TW'),
+        driveFolderId: CONFIG.driveFolderId,
+        files: []
+      }),
+    });
+    statusEl.className = 'text-xs mt-1 text-green-700 font-semibold';
+    statusEl.innerHTML = '✅ 連線正常！請開啟試算表確認是否新增「TEST-連線測試」那列。<br>若有出現，代表一切正常。';
+  } catch(e) {
+    statusEl.className = 'text-xs mt-1 text-red-600';
+    statusEl.textContent = '❌ POST 失敗：' + e.message;
   }
 }
 
