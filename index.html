@@ -561,11 +561,10 @@
         <div class="bg-amber-50 border border-amber-200 rounded-lg p-4 text-sm text-gray-700 leading-relaxed mb-3">
           本人保證本申請資料真實完整，並同意總部基於加盟審查目的蒐集、處理及利用前述資料。
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-3">
           <div>
-            <label class="field-label">申請人簽名</label>
-            <div class="sig-box" id="sigApplicant">（簽章欄位）</div>
-            <input type="text" id="sigApplicantName" placeholder="申請人姓名" class="mt-2" />
+            <label class="field-label">申請人姓名</label>
+            <input type="text" id="sigApplicantName" placeholder="申請人姓名" />
           </div>
           <div>
             <label class="field-label">申請日期</label>
@@ -578,35 +577,10 @@
 
       <!-- 面談主管意見 -->
       <div>
-        <label class="field-label">面談主管意見<span class="text-xs text-gray-400 ml-1">（主管填寫）</span></label>
+        <label class="field-label">業務面談總意見<span class="text-xs text-gray-400 ml-1">（業務填寫）</span></label>
         <textarea id="mgr1Opinion" placeholder="面談評估意見與補充說明"></textarea>
       </div>
 
-      <!-- 審查結論 -->
-      <div>
-        <label class="field-label">審查結論</label>
-        <div class="check-group">
-          <label class="check-item"><input type="radio" name="reviewResult" value="通過" /><span class="text-green-700 font-semibold">✔ 通過</span></label>
-          <label class="check-item"><input type="radio" name="reviewResult" value="補件後再審" /><span class="text-yellow-700 font-semibold">⚠ 補件後再審</span></label>
-          <label class="check-item"><input type="radio" name="reviewResult" value="不通過" /><span class="text-red-700 font-semibold">✘ 不通過</span></label>
-        </div>
-      </div>
-
-      <!-- 主管簽核 -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-        <div>
-          <label class="field-label">總部面談主管</label>
-          <div class="sig-box">（簽章欄位）</div>
-          <input type="text" id="sigMgr1Name" placeholder="面談主管姓名" class="mt-2" />
-          <input type="date" id="sigMgr1Date" class="mt-2" />
-        </div>
-        <div>
-          <label class="field-label">總部審查主管</label>
-          <div class="sig-box">（簽章欄位）</div>
-          <input type="text" id="sigMgr2Name" placeholder="審查主管姓名" class="mt-2" />
-          <input type="date" id="sigMgr2Date" class="mt-2" />
-        </div>
-      </div>
 
     </div>
   </section>
