@@ -1,0 +1,2743 @@
+<?xml version="1.0" encoding="UTF-8"?><w:document xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:cx="http://schemas.microsoft.com/office/drawing/2014/chartex" xmlns:cx1="http://schemas.microsoft.com/office/drawing/2015/9/8/chartex" xmlns:cx2="http://schemas.microsoft.com/office/drawing/2015/10/21/chartex" xmlns:cx3="http://schemas.microsoft.com/office/drawing/2016/5/9/chartex" xmlns:cx4="http://schemas.microsoft.com/office/drawing/2016/5/10/chartex" xmlns:cx5="http://schemas.microsoft.com/office/drawing/2016/5/11/chartex" xmlns:cx6="http://schemas.microsoft.com/office/drawing/2016/5/12/chartex" xmlns:cx7="http://schemas.microsoft.com/office/drawing/2016/5/13/chartex" xmlns:cx8="http://schemas.microsoft.com/office/drawing/2016/5/14/chartex" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:aink="http://schemas.microsoft.com/office/drawing/2016/ink" xmlns:am3d="http://schemas.microsoft.com/office/drawing/2017/model3d" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w16cid="http://schemas.microsoft.com/office/word/2016/wordml/cid" xmlns:w16se="http://schemas.microsoft.com/office/word/2015/wordml/symex" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" mc:Ignorable="w14 w15 w16se w16cid wp14">
+  <w:body>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblW w:w="9906" w:type="dxa"/>
+        <w:tblBorders>
+          <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+          <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+          <w:bottom w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+          <w:right w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+          <w:insideH w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+          <w:insideV w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+        </w:tblBorders>
+        <w:tblCellMar>
+          <w:left w:w="10" w:type="dxa"/>
+          <w:right w:w="10" w:type="dxa"/>
+        </w:tblCellMar>
+        <w:tblLook w:val="04A0" w:firstRow="1" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:noHBand="0" w:noVBand="1"/>
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="2800"/>
+        <w:gridCol w:w="7106"/>
+      </w:tblGrid>
+      <w:tr w:rsidR="00345A28">
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="0" w:type="auto"/>
+            <w:gridSpan w:val="2"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="6" w:space="0" w:color="4D2126"/>
+              <w:left w:val="single" w:sz="6" w:space="0" w:color="4D2126"/>
+              <w:bottom w:val="single" w:sz="6" w:space="0" w:color="4D2126"/>
+              <w:right w:val="single" w:sz="6" w:space="0" w:color="4D2126"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="4D2126"/>
+            <w:tcMar>
+              <w:top w:w="80" w:type="dxa"/>
+              <w:left w:w="160" w:type="dxa"/>
+              <w:bottom w:w="80" w:type="dxa"/>
+              <w:right w:w="120" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:bCs/>
+                <w:color w:val="FFFFFF"/>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>A．基本資料</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00345A28">
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2800" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FAF3EC"/>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:color w:val="7D6050"/>
+              </w:rPr>
+              <w:t>申請類型</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="7106" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="6" w:space="0" w:color="AA7064"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="120" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:t>□ 新加盟　□ 既有加盟主增店　□ 頂讓承接　□ 移點後重新申請</w:t>
+            </w:r>
+            
+            
+            
+            
+            
+            
+            
+            
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00345A28">
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2800" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FAF3EC"/>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:color w:val="7D6050"/>
+              </w:rPr>
+              <w:t>申請門市名稱（暫定）</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="7106" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="6" w:space="0" w:color="AA7064"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="120" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00345A28" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00345A28">
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2800" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FAF3EC"/>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:color w:val="7D6050"/>
+              </w:rPr>
+              <w:t>申請人／法人名稱</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="7106" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="6" w:space="0" w:color="AA7064"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="120" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00345A28" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00345A28">
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2800" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FAF3EC"/>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:color w:val="7D6050"/>
+              </w:rPr>
+              <w:t>統一編號／身分證字號</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="7106" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="6" w:space="0" w:color="AA7064"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="120" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00345A28" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00345A28">
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2800" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FAF3EC"/>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:color w:val="7D6050"/>
+              </w:rPr>
+              <w:t>負責人姓名</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="7106" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="6" w:space="0" w:color="AA7064"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="120" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00345A28" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00345A28">
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2800" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FAF3EC"/>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:color w:val="7D6050"/>
+              </w:rPr>
+              <w:t>聯絡方式</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="7106" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="6" w:space="0" w:color="AA7064"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="120" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:t>手機：________________　E-mail：_______________________　LINE：________________</w:t>
+            </w:r>
+            
+            
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00345A28">
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2800" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FAF3EC"/>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:color w:val="7D6050"/>
+              </w:rPr>
+              <w:t>通訊地址</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="7106" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="6" w:space="0" w:color="AA7064"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="120" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00345A28" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00345A28">
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2800" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FAF3EC"/>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            
+            <w:r>
+              <w:rPr>
+                <w:color w:val="7D6050"/>
+              </w:rPr>
+              <w:t>擬設店址／商圈</w:t>
+            </w:r>
+            
+            
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="7106" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="6" w:space="0" w:color="AA7064"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="120" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00345A28" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00345A28">
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2800" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FAF3EC"/>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:color w:val="7D6050"/>
+              </w:rPr>
+              <w:t>店面狀態</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="7106" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="6" w:space="0" w:color="AA7064"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="120" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:t>□ 已承租　□ 洽談中　□ 自有　□ 尚未確認；坪數約 ______ 坪</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00345A28">
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2800" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FAF3EC"/>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:color w:val="7D6050"/>
+              </w:rPr>
+              <w:t>預計開店時程</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="7106" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="6" w:space="0" w:color="AA7064"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="120" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:t>預計簽約：______年____月____日；預計開幕：______年____月____日</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:p w:rsidR="00345A28" w:rsidRDefault="00345A28" w:rsidP="00CB51C3">
+      <w:pPr>
+        <w:spacing w:line="240" w:lineRule="auto"/>
+      </w:pPr>
+    </w:p>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblW w:w="9906" w:type="dxa"/>
+        <w:tblBorders>
+          <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+          <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+          <w:bottom w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+          <w:right w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+          <w:insideH w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+          <w:insideV w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+        </w:tblBorders>
+        <w:tblCellMar>
+          <w:left w:w="10" w:type="dxa"/>
+          <w:right w:w="10" w:type="dxa"/>
+        </w:tblCellMar>
+        <w:tblLook w:val="04A0" w:firstRow="1" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:noHBand="0" w:noVBand="1"/>
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="2800"/>
+        <w:gridCol w:w="7106"/>
+      </w:tblGrid>
+      <w:tr w:rsidR="00345A28">
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="0" w:type="auto"/>
+            <w:gridSpan w:val="2"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="6" w:space="0" w:color="4D2126"/>
+              <w:left w:val="single" w:sz="6" w:space="0" w:color="4D2126"/>
+              <w:bottom w:val="single" w:sz="6" w:space="0" w:color="4D2126"/>
+              <w:right w:val="single" w:sz="6" w:space="0" w:color="4D2126"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="4D2126"/>
+            <w:tcMar>
+              <w:top w:w="80" w:type="dxa"/>
+              <w:left w:w="160" w:type="dxa"/>
+              <w:bottom w:w="80" w:type="dxa"/>
+              <w:right w:w="120" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:bCs/>
+                <w:color w:val="FFFFFF"/>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>B．背景與經營能力評估</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00345A28">
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2800" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FAF3EC"/>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:color w:val="7D6050"/>
+              </w:rPr>
+              <w:t>目前主要工作／公司</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="7106" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="6" w:space="0" w:color="AA7064"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="120" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00345A28" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00345A28">
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2800" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FAF3EC"/>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:color w:val="7D6050"/>
+              </w:rPr>
+              <w:t>過往經營經驗</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="7106" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="6" w:space="0" w:color="AA7064"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="120" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:t>□ 美容／美髮　□ 餐飲零售　□ 加盟管理　□ 無相關經驗　□ 其他：____________</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00345A28">
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2800" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FAF3EC"/>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:color w:val="7D6050"/>
+              </w:rPr>
+              <w:t>實際經營者與股東結構</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="7106" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="6" w:space="0" w:color="AA7064"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="120" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00345A28" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+          </w:p>
+          <w:p w:rsidR="00AD5A8A" w:rsidRDefault="00AD5A8A" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:rPr>
+                <w:rFonts w:hint="eastAsia"/>
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+          <w:p w:rsidR="00CB51C3" w:rsidRDefault="00CB51C3" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:rPr>
+                <w:rFonts w:hint="eastAsia"/>
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00345A28">
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2800" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FAF3EC"/>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:color w:val="7D6050"/>
+              </w:rPr>
+              <w:t>主要投入人員</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="7106" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="6" w:space="0" w:color="AA7064"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="120" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:t>店長：____________　技術人員：____________　行政／櫃檯：____________</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00345A28">
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2800" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FAF3EC"/>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:color w:val="7D6050"/>
+              </w:rPr>
+              <w:t>其他投資或關係企業</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="7106" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="6" w:space="0" w:color="AA7064"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="120" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:t>□ 否　□ 是，說明：____________________________________________</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00345A28">
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2800" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FAF3EC"/>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:color w:val="7D6050"/>
+              </w:rPr>
+              <w:t>加盟、倒閉、欠稅或重大訴訟</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="7106" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="6" w:space="0" w:color="AA7064"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="120" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:t>□ 否　□ 是，說明：____________________________________________</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:p w:rsidR="00345A28" w:rsidRDefault="00345A28" w:rsidP="00CB51C3">
+      <w:pPr>
+        <w:spacing w:line="240" w:lineRule="auto"/>
+      </w:pPr>
+    </w:p>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblW w:w="9906" w:type="dxa"/>
+        <w:tblBorders>
+          <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+          <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+          <w:bottom w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+          <w:right w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+          <w:insideH w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+          <w:insideV w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+        </w:tblBorders>
+        <w:tblCellMar>
+          <w:left w:w="10" w:type="dxa"/>
+          <w:right w:w="10" w:type="dxa"/>
+        </w:tblCellMar>
+        <w:tblLook w:val="04A0" w:firstRow="1" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:noHBand="0" w:noVBand="1"/>
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="2800"/>
+        <w:gridCol w:w="7106"/>
+      </w:tblGrid>
+      <w:tr w:rsidR="00345A28">
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="0" w:type="auto"/>
+            <w:gridSpan w:val="2"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="6" w:space="0" w:color="4D2126"/>
+              <w:left w:val="single" w:sz="6" w:space="0" w:color="4D2126"/>
+              <w:bottom w:val="single" w:sz="6" w:space="0" w:color="4D2126"/>
+              <w:right w:val="single" w:sz="6" w:space="0" w:color="4D2126"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="4D2126"/>
+            <w:tcMar>
+              <w:top w:w="80" w:type="dxa"/>
+              <w:left w:w="160" w:type="dxa"/>
+              <w:bottom w:w="80" w:type="dxa"/>
+              <w:right w:w="120" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:bCs/>
+                <w:color w:val="FFFFFF"/>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>C．財務與店務規劃</w:t>
+            </w:r>
+            
+            
+            
+            
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00345A28">
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2800" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FAF3EC"/>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:color w:val="7D6050"/>
+              </w:rPr>
+              <w:t>總投資預算</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="7106" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="6" w:space="0" w:color="AA7064"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="120" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:t>加盟金：________　裝潢：________　設備：________　週轉金：________</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00345A28">
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2800" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FAF3EC"/>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:color w:val="7D6050"/>
+              </w:rPr>
+              <w:t>資金來源</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="7106" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="6" w:space="0" w:color="AA7064"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="120" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:t>□ 自有資金　□ 股東出資　□ 銀行貸款　□ 親友借款　□ 其他：____________</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00345A28">
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2800" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FAF3EC"/>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:color w:val="7D6050"/>
+              </w:rPr>
+              <w:t>可否承擔前6個月虧損</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="7106" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="6" w:space="0" w:color="AA7064"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="120" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:t>□ 可　□ 需額外融資　說明：____________________________________</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00345A28">
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2800" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FAF3EC"/>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:color w:val="7D6050"/>
+              </w:rPr>
+              <w:t>預估月租金／押金</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="7106" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="6" w:space="0" w:color="AA7064"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="120" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:t>月租：________　押金：________　租期：________</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00345A28">
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2800" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FAF3EC"/>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:color w:val="7D6050"/>
+              </w:rPr>
+              <w:t>預估人事編制與月薪資成本</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="7106" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="6" w:space="0" w:color="AA7064"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="120" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00345A28" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00345A28">
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2800" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FAF3EC"/>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:color w:val="7D6050"/>
+              </w:rPr>
+              <w:t>預估來客與營運規劃</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="7106" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="6" w:space="0" w:color="AA7064"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="120" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00345A28" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+          </w:p>
+          <w:p w:rsidR="00AD5A8A" w:rsidRDefault="00AD5A8A" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+          </w:p>
+          <w:p w:rsidR="00AD5A8A" w:rsidRDefault="00AD5A8A" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+          </w:p>
+          <w:p w:rsidR="00AD5A8A" w:rsidRDefault="00AD5A8A" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+          </w:p>
+          <w:p w:rsidR="00AD5A8A" w:rsidRDefault="00AD5A8A" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:rPr>
+                <w:rFonts w:hint="eastAsia"/>
+              </w:rPr>
+            </w:pPr>
+            <w:bookmarkStart w:id="0" w:name="_GoBack"/>
+            <w:bookmarkEnd w:id="0"/>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:p w:rsidR="00345A28" w:rsidRDefault="00345A28" w:rsidP="00CB51C3">
+      <w:pPr>
+        <w:spacing w:line="240" w:lineRule="auto"/>
+      </w:pPr>
+    </w:p>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblW w:w="9906" w:type="dxa"/>
+        <w:tblBorders>
+          <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+          <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+          <w:bottom w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+          <w:right w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+          <w:insideH w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+          <w:insideV w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+        </w:tblBorders>
+        <w:tblCellMar>
+          <w:left w:w="10" w:type="dxa"/>
+          <w:right w:w="10" w:type="dxa"/>
+        </w:tblCellMar>
+        <w:tblLook w:val="04A0" w:firstRow="1" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:noHBand="0" w:noVBand="1"/>
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="2800"/>
+        <w:gridCol w:w="7106"/>
+      </w:tblGrid>
+      <w:tr w:rsidR="00345A28">
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="0" w:type="auto"/>
+            <w:gridSpan w:val="2"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="6" w:space="0" w:color="4D2126"/>
+              <w:left w:val="single" w:sz="6" w:space="0" w:color="4D2126"/>
+              <w:bottom w:val="single" w:sz="6" w:space="0" w:color="4D2126"/>
+              <w:right w:val="single" w:sz="6" w:space="0" w:color="4D2126"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="4D2126"/>
+            <w:tcMar>
+              <w:top w:w="80" w:type="dxa"/>
+              <w:left w:w="160" w:type="dxa"/>
+              <w:bottom w:w="80" w:type="dxa"/>
+              <w:right w:w="120" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:bCs/>
+                <w:color w:val="FFFFFF"/>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:lastRenderedPageBreak/>
+              <w:t>D．商圈與店址評估</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00345A28">
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2800" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FAF3EC"/>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:color w:val="7D6050"/>
+              </w:rPr>
+              <w:t>商圈類型</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="7106" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="6" w:space="0" w:color="AA7064"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="120" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:t>□ 商業辦公區　□ 住宅社區　□ 捷運／交通樞紐　□ 百貨商場　□ 混合商業區　□ 其他：____________</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00345A28">
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2800" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FAF3EC"/>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:color w:val="7D6050"/>
+              </w:rPr>
+              <w:t>主要客群</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="7106" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="6" w:space="0" w:color="AA7064"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="120" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:t>□ 25–35歲　□ 36–50歲　□ 50歲以上　□ 男性客　□ 熟齡客</w:t>
+            </w:r>
+            
+            
+            
+            
+            
+            
+            
+            
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00345A28">
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2800" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FAF3EC"/>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            
+            <w:r>
+              <w:rPr>
+                <w:color w:val="7D6050"/>
+              </w:rPr>
+              <w:t>周邊競品</w:t>
+            </w:r>
+            
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="7106" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="6" w:space="0" w:color="AA7064"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="120" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00345A28" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00345A28">
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2800" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FAF3EC"/>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:color w:val="7D6050"/>
+              </w:rPr>
+              <w:t>交通與能見度</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="7106" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="6" w:space="0" w:color="AA7064"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="120" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:t>□ 臨路　□ 近捷運／公車　□ 有停車　□ 二樓以上　□ 需預約導流</w:t>
+            </w:r>
+            
+            
+            
+            
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00345A28">
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2800" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FAF3EC"/>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:color w:val="7D6050"/>
+              </w:rPr>
+              <w:t>總部商圈評估意見</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="7106" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="6" w:space="0" w:color="AA7064"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="120" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00345A28" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+          </w:p>
+          <w:p w:rsidR="00AD5A8A" w:rsidRDefault="00AD5A8A" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:rPr>
+                <w:rFonts w:hint="eastAsia"/>
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00345A28">
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2800" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FAF3EC"/>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:color w:val="7D6050"/>
+              </w:rPr>
+              <w:t>風險提醒</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="7106" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="6" w:space="0" w:color="AA7064"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="120" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00345A28" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+          </w:p>
+          <w:p w:rsidR="00AD5A8A" w:rsidRDefault="00AD5A8A" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:rPr>
+                <w:rFonts w:hint="eastAsia"/>
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:p w:rsidR="00345A28" w:rsidRDefault="00345A28" w:rsidP="00CB51C3">
+      <w:pPr>
+        <w:spacing w:line="240" w:lineRule="auto"/>
+      </w:pPr>
+    </w:p>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblW w:w="9906" w:type="dxa"/>
+        <w:tblBorders>
+          <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+          <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+          <w:bottom w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+          <w:right w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+          <w:insideH w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+          <w:insideV w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+        </w:tblBorders>
+        <w:tblCellMar>
+          <w:left w:w="10" w:type="dxa"/>
+          <w:right w:w="10" w:type="dxa"/>
+        </w:tblCellMar>
+        <w:tblLook w:val="04A0" w:firstRow="1" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:noHBand="0" w:noVBand="1"/>
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="9906"/>
+      </w:tblGrid>
+      <w:tr w:rsidR="00345A28">
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="0" w:type="auto"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="6" w:space="0" w:color="4D2126"/>
+              <w:left w:val="single" w:sz="6" w:space="0" w:color="4D2126"/>
+              <w:bottom w:val="single" w:sz="6" w:space="0" w:color="4D2126"/>
+              <w:right w:val="single" w:sz="6" w:space="0" w:color="4D2126"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="4D2126"/>
+            <w:tcMar>
+              <w:top w:w="80" w:type="dxa"/>
+              <w:left w:w="160" w:type="dxa"/>
+              <w:bottom w:w="80" w:type="dxa"/>
+              <w:right w:w="120" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:bCs/>
+                <w:color w:val="FFFFFF"/>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>E．經營理念與配合度調查（請逐項打勾確認）</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00345A28">
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="0" w:type="auto"/>
+            <w:tcBorders>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="2" w:space="0" w:color="E8D5C0"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="30" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="30" w:type="dxa"/>
+              <w:right w:w="120" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:bCs/>
+                <w:color w:val="AA7064"/>
+              </w:rPr>
+              <w:t xml:space="preserve">□  </w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="17"/>
+                <w:szCs w:val="17"/>
+              </w:rPr>
+              <w:t>同意營業場所之設計與裝潢，統一由總部指派之設計公司按圖施工，不得擅自更改色系、材質或動線規劃。</w:t>
+            </w:r>
+            
+            
+            
+            
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00345A28">
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="0" w:type="auto"/>
+            <w:tcBorders>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="2" w:space="0" w:color="E8D5C0"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="30" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="30" w:type="dxa"/>
+              <w:right w:w="120" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:bCs/>
+                <w:color w:val="AA7064"/>
+              </w:rPr>
+              <w:t xml:space="preserve">□  </w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="17"/>
+                <w:szCs w:val="17"/>
+              </w:rPr>
+              <w:t>同意購買總部規定之基本設備，含高倍率頭皮檢測儀、頭皮理療專用儀器、品牌指定洗頭床，及總部指定耗材與備品。</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00345A28">
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="0" w:type="auto"/>
+            <w:tcBorders>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="2" w:space="0" w:color="E8D5C0"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="30" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="30" w:type="dxa"/>
+              <w:right w:w="120" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:bCs/>
+                <w:color w:val="AA7064"/>
+              </w:rPr>
+              <w:t xml:space="preserve">□  </w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="17"/>
+                <w:szCs w:val="17"/>
+              </w:rPr>
+              <w:t>同意每日營業時間為 12 小時，門市人員一律穿著公司規定之制服與儀容標準，維護品牌專業形象。</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00345A28">
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="0" w:type="auto"/>
+            <w:tcBorders>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="2" w:space="0" w:color="E8D5C0"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="30" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="30" w:type="dxa"/>
+              <w:right w:w="120" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:bCs/>
+                <w:color w:val="AA7064"/>
+              </w:rPr>
+              <w:t xml:space="preserve">□  </w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="17"/>
+                <w:szCs w:val="17"/>
+              </w:rPr>
+              <w:t>同意所有頭皮護理療程必須包含「前置檢測與後置對比」之標準流程，並將檢測數據與影像完整建檔至雲端系統。</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00345A28">
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="0" w:type="auto"/>
+            <w:tcBorders>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="2" w:space="0" w:color="E8D5C0"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="30" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="30" w:type="dxa"/>
+              <w:right w:w="120" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:bCs/>
+                <w:color w:val="AA7064"/>
+              </w:rPr>
+              <w:t xml:space="preserve">□  </w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="17"/>
+                <w:szCs w:val="17"/>
+              </w:rPr>
+              <w:t>同意配合每月全省統一公休之頭皮管理師教育日，參與各項技術、髮品、服務美學與管理能力訓練，不得以業務繁忙為由長期缺席。</w:t>
+            </w:r>
+            
+            
+            
+            
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00345A28">
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="0" w:type="auto"/>
+            <w:tcBorders>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="2" w:space="0" w:color="E8D5C0"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="30" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="30" w:type="dxa"/>
+              <w:right w:w="120" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:bCs/>
+                <w:color w:val="AA7064"/>
+              </w:rPr>
+              <w:t xml:space="preserve">□  </w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="17"/>
+                <w:szCs w:val="17"/>
+              </w:rPr>
+              <w:t>同意嚴格遵守總部定價政策，不得擅自提高、降低、拆售或以其他方式破壞品牌價格體系與市場秩序。</w:t>
+            </w:r>
+            
+            
+            
+            
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00345A28">
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="0" w:type="auto"/>
+            <w:tcBorders>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="2" w:space="0" w:color="E8D5C0"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="30" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="30" w:type="dxa"/>
+              <w:right w:w="120" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:bCs/>
+                <w:color w:val="AA7064"/>
+              </w:rPr>
+              <w:t xml:space="preserve">□  </w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="17"/>
+                <w:szCs w:val="17"/>
+              </w:rPr>
+              <w:t>同意配合總部定期與不定期稽核，並於稽核後於指定期限內完成缺失改善，以維持服務品質與品牌標準。</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:p w:rsidR="00345A28" w:rsidRDefault="00345A28" w:rsidP="00CB51C3">
+      <w:pPr>
+        <w:spacing w:line="240" w:lineRule="auto"/>
+      </w:pPr>
+    </w:p>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblW w:w="9906" w:type="dxa"/>
+        <w:tblBorders>
+          <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+          <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+          <w:bottom w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+          <w:right w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+          <w:insideH w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+          <w:insideV w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+        </w:tblBorders>
+        <w:tblCellMar>
+          <w:left w:w="10" w:type="dxa"/>
+          <w:right w:w="10" w:type="dxa"/>
+        </w:tblCellMar>
+        <w:tblLook w:val="04A0" w:firstRow="1" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:noHBand="0" w:noVBand="1"/>
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="2119"/>
+        <w:gridCol w:w="7787"/>
+      </w:tblGrid>
+      <w:tr w:rsidR="00345A28">
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="0" w:type="auto"/>
+            <w:gridSpan w:val="2"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="6" w:space="0" w:color="4D2126"/>
+              <w:left w:val="single" w:sz="6" w:space="0" w:color="4D2126"/>
+              <w:bottom w:val="single" w:sz="6" w:space="0" w:color="4D2126"/>
+              <w:right w:val="single" w:sz="6" w:space="0" w:color="4D2126"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="4D2126"/>
+            <w:tcMar>
+              <w:top w:w="80" w:type="dxa"/>
+              <w:left w:w="160" w:type="dxa"/>
+              <w:bottom w:w="80" w:type="dxa"/>
+              <w:right w:w="120" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:bCs/>
+                <w:color w:val="FFFFFF"/>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>F．申請人聲明與審查結論</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00345A28" w:rsidTr="00BF2DD6">
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2119" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FAF3EC"/>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:color w:val="7D6050"/>
+              </w:rPr>
+              <w:t>應檢附文件</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="7787" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="6" w:space="0" w:color="AA7064"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="120" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:t>□ 身分證明　□ 公司／商業登記　□ 店面資料　□ 租約草案　□ 資金證明　□ 其他：__________</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00345A28">
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="0" w:type="auto"/>
+            <w:gridSpan w:val="2"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="60" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="60" w:type="dxa"/>
+              <w:right w:w="120" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:bCs/>
+                <w:color w:val="7D6050"/>
+                <w:sz w:val="17"/>
+                <w:szCs w:val="17"/>
+              </w:rPr>
+              <w:t>申請人聲明：</w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="17"/>
+                <w:szCs w:val="17"/>
+              </w:rPr>
+              <w:t>本人保證本申請資料真實完整，並同意總部基於加盟審查目的蒐集、處理及利用前述資料。</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00345A28" w:rsidTr="00BF2DD6">
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2119" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FAF3EC"/>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:color w:val="7D6050"/>
+              </w:rPr>
+              <w:t>面談主管意見</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="7787" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="6" w:space="0" w:color="AA7064"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="120" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00345A28" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+          </w:p>
+          <w:p w:rsidR="00FF0E50" w:rsidRDefault="00FF0E50" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+          </w:p>
+          <w:p w:rsidR="00FF0E50" w:rsidRDefault="00FF0E50" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:rPr>
+                <w:rFonts w:hint="eastAsia"/>
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+          <w:p w:rsidR="00CB51C3" w:rsidRDefault="00CB51C3" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:rPr>
+                <w:rFonts w:hint="eastAsia"/>
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00345A28" w:rsidTr="00BF2DD6">
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2119" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FAF3EC"/>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:color w:val="7D6050"/>
+              </w:rPr>
+              <w:t>審查結論</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="7787" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="6" w:space="0" w:color="AA7064"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="50" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="50" w:type="dxa"/>
+              <w:right w:w="120" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:t>□ 通過　□ 補件後再審　□ 不通過</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:p w:rsidR="00345A28" w:rsidRDefault="00345A28" w:rsidP="00CB51C3">
+      <w:pPr>
+        <w:spacing w:line="240" w:lineRule="auto"/>
+      </w:pPr>
+    </w:p>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblW w:w="9906" w:type="dxa"/>
+        <w:tblBorders>
+          <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+          <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+          <w:bottom w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+          <w:right w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+          <w:insideH w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+          <w:insideV w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+        </w:tblBorders>
+        <w:tblCellMar>
+          <w:left w:w="10" w:type="dxa"/>
+          <w:right w:w="10" w:type="dxa"/>
+        </w:tblCellMar>
+        <w:tblLook w:val="04A0" w:firstRow="1" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:noHBand="0" w:noVBand="1"/>
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="3302"/>
+        <w:gridCol w:w="3302"/>
+        <w:gridCol w:w="3302"/>
+      </w:tblGrid>
+      <w:tr w:rsidR="00345A28">
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="3302" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FAF3EC"/>
+            <w:tcMar>
+              <w:top w:w="80" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="80" w:type="dxa"/>
+              <w:right w:w="120" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00D866B3">
+            <w:pPr>
+              <w:spacing w:line="360" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:bCs/>
+                <w:color w:val="4D2126"/>
+              </w:rPr>
+              <w:t>申請人</w:t>
+            </w:r>
+          </w:p>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00D866B3">
+            <w:pPr>
+              <w:spacing w:line="360" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="17"/>
+                <w:szCs w:val="17"/>
+              </w:rPr>
+              <w:t>簽章：__________________</w:t>
+            </w:r>
+          </w:p>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00D866B3">
+            <w:pPr>
+              <w:spacing w:line="360" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="17"/>
+                <w:szCs w:val="17"/>
+              </w:rPr>
+              <w:t>姓名：__________________</w:t>
+            </w:r>
+          </w:p>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00D866B3">
+            <w:pPr>
+              <w:spacing w:line="360" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="17"/>
+                <w:szCs w:val="17"/>
+              </w:rPr>
+              <w:t>日期：______年____月____日</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="3302" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FAF3EC"/>
+            <w:tcMar>
+              <w:top w:w="80" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="80" w:type="dxa"/>
+              <w:right w:w="120" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00D866B3">
+            <w:pPr>
+              <w:spacing w:line="360" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:bCs/>
+                <w:color w:val="4D2126"/>
+              </w:rPr>
+              <w:t>總部面談主管</w:t>
+            </w:r>
+          </w:p>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00D866B3">
+            <w:pPr>
+              <w:spacing w:line="360" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="17"/>
+                <w:szCs w:val="17"/>
+              </w:rPr>
+              <w:t>簽章：__________________</w:t>
+            </w:r>
+          </w:p>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00D866B3">
+            <w:pPr>
+              <w:spacing w:line="360" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="17"/>
+                <w:szCs w:val="17"/>
+              </w:rPr>
+              <w:t>姓名：__________________</w:t>
+            </w:r>
+          </w:p>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00D866B3">
+            <w:pPr>
+              <w:spacing w:line="360" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="17"/>
+                <w:szCs w:val="17"/>
+              </w:rPr>
+              <w:t>日期：______年____月____日</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="3302" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="E8D5C0"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="FAF3EC"/>
+            <w:tcMar>
+              <w:top w:w="80" w:type="dxa"/>
+              <w:left w:w="120" w:type="dxa"/>
+              <w:bottom w:w="80" w:type="dxa"/>
+              <w:right w:w="120" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00D866B3">
+            <w:pPr>
+              <w:spacing w:line="360" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:bCs/>
+                <w:color w:val="4D2126"/>
+              </w:rPr>
+              <w:t>總部審查主管</w:t>
+            </w:r>
+          </w:p>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00D866B3">
+            <w:pPr>
+              <w:spacing w:line="360" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="17"/>
+                <w:szCs w:val="17"/>
+              </w:rPr>
+              <w:t>簽章：__________________</w:t>
+            </w:r>
+          </w:p>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00D866B3">
+            <w:pPr>
+              <w:spacing w:line="360" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="17"/>
+                <w:szCs w:val="17"/>
+              </w:rPr>
+              <w:t>姓名：__________________</w:t>
+            </w:r>
+          </w:p>
+          <w:p w:rsidR="00345A28" w:rsidRDefault="00136FCF" w:rsidP="00D866B3">
+            <w:pPr>
+              <w:spacing w:line="360" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="17"/>
+                <w:szCs w:val="17"/>
+              </w:rPr>
+              <w:t>日期：______年____月____日</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:p w:rsidR="00136FCF" w:rsidRDefault="00136FCF" w:rsidP="00CB51C3">
+      <w:pPr>
+        <w:spacing w:line="240" w:lineRule="auto"/>
+      </w:pPr>
+    </w:p>
+    <w:sectPr w:rsidR="00136FCF" w:rsidSect="00BF2DD6">
+      <w:headerReference w:type="default" r:id="rId7"/>
+      <w:footerReference w:type="default" r:id="rId8"/>
+      <w:pgSz w:w="11906" w:h="16838"/>
+      <w:pgMar w:top="902" w:right="964" w:bottom="902" w:left="964" w:header="709" w:footer="709" w:gutter="0"/>
+      <w:cols w:space="720"/>
+      <w:docGrid w:linePitch="360"/>
+    </w:sectPr>
+  </w:body>
+</w:document>
